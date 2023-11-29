@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomSheet"
+    style="@style/Animation.Design.BottomSheetDialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="@dimen/dimen_32"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:theme="@style/Theme.Todoister.AppBarOverlay"
+            app:layout_constraintBottom_toTopOf="@+id/newTask_enter_todo"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/newTask_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/Theme.Todoister.PopupOverlay" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+            <EditText
+                android:id="@+id/newTask_enter_todo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:hint="@string/enter_todo_hint"
+                android:inputType="textPersonName"
+                android:padding="@dimen/dimen_16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/newTask_speech"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/mic_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/calenderIcon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="@dimen/dimen_16"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/calender_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/newTask_enter_todo"/>
+
+            <TextView
+                android:id="@+id/dateTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calenderIcon"
+                android:layout_marginStart="16dp"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/calenderIcon" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/dateLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="@dimen/dimen_32"
+            android:layout_marginEnd="@dimen/dimen_16"
+            app:layout_constraintStart_toEndOf="@id/calenderIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/newTask_enter_todo">
+
+            <EditText
+                android:id="@+id/enter_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter a Date"
+                android:focusable="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageButton
+            android:id="@+id/clockIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="@dimen/dimen_16"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_baseline_access_time_24"
+            app:layout_constraintTop_toBottomOf="@id/dateTxt"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/timeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="@id/clockIcon"
+            app:layout_constraintTop_toBottomOf="@id/clockIcon" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/timeLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="@dimen/dimen_32"
+            android:layout_marginEnd="@dimen/dimen_16"
+            app:layout_constraintStart_toEndOf="@id/clockIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dateLayout">
+
+            <EditText
+                android:id="@+id/enter_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter a Date"
+                android:focusable="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageButton
+            android:id="@+id/priorityIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="@dimen/dimen_16"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/priority_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/timeTxt" />
+
+
+        <TextView
+            android:id="@+id/priorityTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Priority"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/priorityIcon" />
+
+        <RadioGroup
+            android:id="@+id/newTask_radioGroup_priority"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:layout_marginStart="@dimen/dimen_32"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/priorityIcon"
+            app:layout_constraintTop_toBottomOf="@+id/timeLayout"
+            tools:layout_editor_absoluteX="98dp">
+
+            <RadioButton
+                android:id="@+id/newTask_radioButton_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#C91517"
+                android:text="@string/radio_high"
+                android:textColor="#FFE082" />
+
+            <RadioButton
+                android:id="@+id/newTask_radioButton_med"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFB300"
+                android:text="@string/radio_med" />
+
+            <RadioButton
+                android:id="@+id/newTask_radioButton_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_light"
+                android:minHeight="48dp"
+                android:text="@string/radio_low" />
+        </RadioGroup>
+
+        <ImageButton
+            android:id="@+id/newTask_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="104dp"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/image_description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/priorityTxt"
+            app:srcCompat="@drawable/add_photo" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="@dimen/dimen_32"
+            android:layout_marginTop="28dp"
+            android:scaleType="fitXY"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:src="@drawable/add_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/newTask_image_button"
+            app:layout_constraintTop_toBottomOf="@id/priorityTxt" />
+
+        <ImageButton
+            android:id="@+id/newTask_location_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/dimen_32"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/image_description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:srcCompat="@drawable/add_location" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/newTask_locationChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_32"
+            android:layout_marginTop="28dp"
+            android:text="Location"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/priorityTxt"
+            app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:gravity="center_horizontal"
+            app:layout_constraintTop_toBottomOf="@id/newTask_locationChip"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/SaveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/newTask_locationChip"
+            android:text="Save"/>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

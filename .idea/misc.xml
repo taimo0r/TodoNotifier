@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Taimoor's/Android Development/Projects/TodoNotifier/app/src/main/res/drawable/ic_baseline_location_on_24.xml" value="0.105" />
+        <entry key="..\:/Taimoor's/Android Development/Projects/TodoNotifier/app/src/main/res/drawable/menu_icon.xml" value="0.13" />
+        <entry key="..\:/Taimoor's/Android Development/Projects/TodoNotifier/app/src/main/res/layout/activity_new_task.xml" value="0.23164097914777879" />
+        <entry key="..\:/Taimoor's/Android Development/Projects/TodoNotifier/app/src/main/res/layout/bottom_sheet.xml" value="0.31765711842667804" />
+        <entry key="..\:/Taimoor's/Android Development/Projects/TodoNotifier/app/src/main/res/layout/todo_row.xml" value="0.25" />
+        <entry key="..\:/Taimoor's/Android Development/Projects/TodoNotifier/app/src/main/res/menu/pending_menu.xml" value="0.3172295852928602" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable-v24/todo_icon_low.xml" value="0.2095" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable-v24/todo_icon_med.xml" value="0.2095" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/add_location.xml" value="0.296" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/add_photo.xml" value="0.338" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/calender_icon.xml" value="0.104" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/high_notify.xml" value="0.104" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/ic_baseline_access_time_24.xml" value="0.338" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/ic_baseline_add_circle_24.xml" value="0.2495" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/ic_baseline_airline_seat_recline_extra_24.xml" value="0.104" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/ic_baseline_arrow_circle_up_24.xml" value="0.2495" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/ic_baseline_arrow_circle_up_48.xml" value="0.104" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/ic_baseline_attachment_24.xml" value="0.338" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/ic_baseline_calendar_today_24.xml" value="0.104" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/ic_baseline_image_24.xml" value="0.247" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/ic_baseline_location_on_24.xml" value="0.2465" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/ic_baseline_mic_24.xml" value="0.387" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/ic_baseline_next_week_24.xml" value="0.338" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/ic_baseline_note_add_24.xml" value="0.283" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/ic_baseline_outlined_flag_24.xml" value="0.283" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/ic_baseline_today_24.xml" value="0.338" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/ic_baseline_wb_sunny_24.xml" value="0.2505" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/low_notify.xml" value="0.104" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/manual_location.xml" value="0.2545" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/medium_notify.xml" value="0.104" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/mic_icon.xml" value="0.312" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/priority_icon.xml" value="0.104" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/repeat_48.xml" value="0.283" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/drawable/todo_icon_high.xml" value="0.2095" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/layout/activity_about.xml" value="0.31765711842667804" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/layout/activity_new_task.xml" value="0.33" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/layout/bottom_sheet.xml" value="0.4282420749279539" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/layout/fragment_bottom_sheet.xml" value="0.24592391304347827" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/layout/fragment_completed.xml" value="0.31765711842667804" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/layout/fragment_new_task.xml" value="0.33" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/layout/fragment_pending_task.xml" value="0.31765711842667804" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/layout/fragment_reminder.xml" value="0.5" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/layout/location_dialog.xml" value="0.33" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/layout/todo_row.xml" value="0.33" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/layout/todo_row_comleted.xml" value="0.67" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/layout/todo_row_completed.xml" value="0.33" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/menu/menu_main.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/menu/pending_menu.xml" value="0.5" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/menu/popup__menu.xml" value="0.21223354958294718" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/TodoNotifier/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/Todoister/app/src/main/res/layout/activity_about.xml" value="0.33" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/Todoister/app/src/main/res/layout/activity_main.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/Todoister/app/src/main/res/layout/bottom_sheet.xml" value="0.34782608695652173" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/Todoister/app/src/main/res/layout/todo_row.xml" value="0.23958333333333334" />
+        <entry key="..\:/Users/windows/AndroidStudioProjects/Todoister/app/src/main/res/menu/menu_main.xml" value="0.20104166666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

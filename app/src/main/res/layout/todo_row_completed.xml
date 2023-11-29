@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/todo_row_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/top_margin">
+
+    <RadioButton
+        android:id="@+id/todo_radio_button_completed"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:checked="true"
+        android:padding="@dimen/dimen_0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/todo_row_todo_completed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/display_image_completed"
+        app:layout_constraintStart_toEndOf="@+id/todo_radio_button_completed"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/display_image_completed"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="@dimen/dimen_10"
+        android:scaleType="centerCrop"
+        app:civ_border_width="2dp"
+        app:shapeAppearanceOverlay="@style/RoundedSquare"
+        app:civ_border_color="@color/mdtp_light_gray"
+        android:src="@drawable/ic_baseline_image_24"
+        app:layout_constraintBottom_toBottomOf="@+id/complete_chip"
+        app:layout_constraintEnd_toStartOf="@id/complete_chip"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/popup_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/menu_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/black" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/todo_row_chip_completed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/today"
+        app:chipIcon="@drawable/ic_baseline_today_24"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/display_image_completed"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/todo_radio_button_completed"
+        app:layout_constraintTop_toBottomOf="@+id/todo_row_todo_completed" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/complete_chip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="14dp"
+        android:text="Completed"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popup_menu" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:alpha="0.4"
+        android:background="#C5C2C2"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/todo_row_chip_completed">
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
